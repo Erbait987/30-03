@@ -36,20 +36,27 @@ function calc(operator){
     switch (operator) {
         case '+':
             alert(result = firstNumber + secondNumber)
+            document.querySelector('#secondNum').classList.remove('red');
             break;
         case '-':
             alert(result = firstNumber - secondNumber)
+            document.querySelector('#secondNum').classList.remove('red');
+
             break;
         case '*':
             alert(result = firstNumber * secondNumber)
+            document.querySelector('#secondNum').classList.remove('red');
+
             break;
         case '/':
             if(secondNumber !== 0){
                 alert(result = firstNumber / secondNumber)
+                document.querySelector('#secondNum').classList.remove('red');
+
             }else{
-                alert('делить на 0 нельзя!')
+                document.querySelector('#secondNum').classList.add('red');
+                alert('На ноль делить нельзя!')
             }
             break;
     }
 }
-
