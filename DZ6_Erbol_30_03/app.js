@@ -60,8 +60,3 @@ function calc(operator){
             break;
     }
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> cbc1f0d9d650d1aae22162746f040928d998d797
